@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows:100px  ;
+    
+
+}
+
+.container div{
+    background:  #ecf0f1;
+    padding: 1em;
+
+}
+
+.container div:hover{
+    border: 1px solid #f1c40f;
+    
+}
+
+.item1{
+    grid-column: 1/4;
+}

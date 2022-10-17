@@ -1,0 +1,119 @@
+/* ANIMACIONES */
+body{
+   background-color: antiquewhite; 
+}
+.texto-animado{
+    animation-name: texto-volador;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    border: solid;
+}
+
+@keyframes texto-volador{
+    from{
+        margin-left: 100%;
+        width: 350px;
+        background-color: aqua;
+        border: none;
+    }
+    to{
+        margin-left: -100%;
+        background-color: red;
+        color: white;
+    }
+}
+
+.image-animada{
+    animation-name: image-resize;
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-resize{
+    from{
+        width: 200px;
+        height: 100px;
+    }
+    to{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.box-1{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    animation-name: box-animation;
+  
+}
+
+@keyframes box-animation{
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: aqua;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: green;
+    }
+}
+/* ESTO ES UN BALON */
+.ball-uno{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border-radius: 50%;
+    animation-name: ball-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ball-animation{
+    from{
+     transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-400px);
+    }
+}
+
+.lineas{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 44px;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+
+.texto-animado-dos{
+    animation: texto-animado-dos 5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto-animado-dos{
+    from{
+        width: 0;
+    }
+    to{
+        width: 600px;
+    }
+}
+
+@keyframes cursor {
+    from{
+        border-right-color: red;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}

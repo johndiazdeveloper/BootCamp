@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container>* {
+    padding: 20px;
+    border: solid;
+    text-align: center;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+
+grid-template-columns: 200px auto 200px;
+grid-template-rows: 100px auto 100px;
+/* template areas -- sirve para asignar un nombe a las columnas y filas */
+
+grid-template-areas:
+
+"header header sidebar"
+"navbar main sidebar"
+"footer footer sidebar"
+;
+
+}
+
+.header{
+    color: aqua;
+    grid-area:header;
+}
+
+.nav{
+    background-color: red;
+    grid-area:  navbar;
+}
+
+.aside{
+    background-color: green;
+    grid-area: sidebar;
+}
+
+.container{
+    background-color: violet;
+    grid-area: main;
+}
+
+.footer{
+    background-color: pink;
+    grid-area: footer;
+}

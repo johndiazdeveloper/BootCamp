@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 18px;
+}
+
+body{
+    background-color: blue;
+}
+
+.section-principal{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-principal div{
+    width: 200px;
+    height: 200px;
+    
+    border: solid;
+}
+
+.box-one{
+    background-color: yellow;
+}
+
+.box-two{
+    background-color: red;
+}
+
+.box-three{
+    background-color: aqua;
+}
+
+
+/*  dentro de los elementos responsive tenermos 3 medias standar  1200 a 1900 px es al tamqño desktop / de 900 a 700 px  es de table / 680 a 480 es mobile o celulares */
+@media only screen and (max-width :380px){
+    body{
+        background-color: blueviolet;
+    }
+    .section-principal div{
+        width: 50px;
+        height: 50px;        
+        border: solid;
+    }
+    .section-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        align-items: center;
+
+    }
+
+    .box-three{
+        background-color: brown;
+        border-radius: 30px;
+    }
+    
+
+    .box-one{
+        background-color: black;
+    }
+}
+
+
+
+/* ...............tablest */
+/* mobiles  */

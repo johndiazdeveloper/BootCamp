@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    height: 100vh;
+
+}
+
+.form{
+    border: 2px solid #ccc;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.form h2{
+    letter-spacing: 2px;
+    color: blue;
+}
+
+.input-form{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border:solid 2px #ccc;
+    border-radius: 5px;
+}
+/* 
+
+linear -la misma velocidad desde que empeiza hasta que terminaa
+
+ease-in -empieza lento y acaba rapido
+ease-out empieza rapido y acaba lento
+ease-in-out -empieza lento y acaba lento 
+
+*/
+
+.btn-primary{
+    margin-top: 20px;
+    padding: 10px;
+    width:100% ;
+    border: none;
+    background-color: rgb(33,168,253);
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+/* usar un transorm cuando queremos ca,bair el esatdo de una propiedad */
+
+.btn-primary:hover{
+    background-color: yellow;
+}
+
+.container-help{
+    transition: ease-in 0.5s;
+}
+
+
+.text-help{
+    display: none;
+    max-width: 300px;
+    min-width: 300px;
+    transition: ease-in 1s;
+}
+
+.button-help{
+    border: none;
+    background-color: transparent;
+   
+}
+
+.container-help:hover +.text-help {
+    display: block ;
+  
+}
