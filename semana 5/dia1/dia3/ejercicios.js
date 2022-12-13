@@ -1,4 +1,4 @@
-// crearemos nuestra funcion 
+// funcion 
 
 function callMenu(){
     let nro_ejercicio= parseInt(

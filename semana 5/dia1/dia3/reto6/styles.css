@@ -1,0 +1,28 @@
+
+#value{
+
+    color: black;
+}
+.container {
+    background-color: rgb(97, 97, 247);
+    border-radius: 20px;
+    border: solid;
+    border-color: blue;
+    text-align: center;
+    overflow: hidden;
+    margin: 0px 150px 10px 150px;
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+}
+
+.btn{
+
+    background-color: rgb(116, 142, 255);
+    border-radius: 2px;
+    margin: 0px 10px 15px 15px;
+    border-color: rgb(127, 138, 255);
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+
+}
+

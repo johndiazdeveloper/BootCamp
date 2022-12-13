@@ -1,9 +1,3 @@
-// que es un objeto  es una entidad independinete , el cual tiene prpiedas y atributos .
-//  esta compuesto por un (keys) y un value
-
-
-//el objeto de un carro 
-
 const carro ={
     color: "azul",
     motor: 1.6,
@@ -29,16 +23,16 @@ const persona={
 
 }
 
-//como acceder a un atributo
+// acceder atributo
 
 console.log("nombre" ,persona.estadoCivil)
 console.log("persona", persona)
 
-// como sustituir
+//  sustituir
  persona.nombre = "guillermo";
  persona.talla = 2.00;
 
-// agregar un elemento  = key y el value 
+// agregar un elemento 
 
 persona["profesion"] = "ingeniebrio"
 persona["bailarin"]= true;

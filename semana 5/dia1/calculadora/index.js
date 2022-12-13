@@ -1,5 +1,3 @@
-
-
 const documentReady = ()=>{
     const calculatorForm = document.getElementById('calculatorForm');
 

@@ -1,0 +1,62 @@
+:root{
+    --clr-primary-1:hsl(205,86%,17%);
+    --clr-primary-2:hsl(205,76%,27%);
+    --clr-primary-3:hsl(205,72%,47%);
+    --clr-primary-4:hsl(205,62%,57%);
+    --clr-primary-5:hsl(205,52%,37%);
+    --clr-primary-6:hsl(205,42%,67%);
+    --clr-primary-7:hsl(205,42%,47%);
+    --clr-primary-8:hsl(205,42%,77%);
+    --clr-primary-9:hsl(205,42%,87%);
+    --clr-primary-10:hsl(205,42%,89%);
+    /* -------------------- */
+   --clr-grey-1: hsl(209,58%,30%);
+   --clr-grey-2: hsl(209,48%,30%);
+   --clr-grey-3: hsl(209,38%,30%);
+   --clr-grey-4: hsl(209,28%,30%);
+
+    --clr-black:#222;
+    --ff-primary: "Roboto";
+    --transtion: all 0.3s linear;
+    --spacing : 0.25rem;
+    --radius : 0.5rem;    
+}
+
+
+body{
+    font-family: var(--ff-primary);
+    background-color:var(--clr-grey-1) ;
+    color: var(--clr-primary-8);
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+h2{
+    font-size: 2rem;
+    padding: 20px ;
+    background-color: #222;
+    border-radius: 10px;
+    
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+}
+.btn{
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff ;
+    border-radius: var(--radius);
+    cursor: pointer;
+    padding: 10px;
+}
+.btn:hover{
+    color: var(--clr-grey-4);
+    background-color: var(--clr-black);
+}

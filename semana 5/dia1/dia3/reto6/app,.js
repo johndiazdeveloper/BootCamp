@@ -17,7 +17,7 @@ item.forEach(function(btn){
         }
 
         if(count>0){
-            value.style.color= "green";
+            value.style.color= "white";
         }
         if(count < 0){
             value.style.color= "red";

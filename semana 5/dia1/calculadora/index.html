@@ -11,20 +11,20 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 </head>
 
-<body class="bg-dark text-light">
+<body class="bg-black text-light">
   <main>
     <section class="py-5">
       <div class="container d-flex flex-column gap-4">
-      <h1 class="text-info text-center">Calculadora Bootstrap</h1>
+      <h1 class="text-info text-center">Calculadora CON BOOTSTRAP</h1>
         <form class="d-flex flex-column gap-3" id="calculatorForm">
           <div class="form-floating ">
-            <input type="number" class="form-control bg-transparent text-light" id="number1" placeholder="Número 1"
+            <input type="number" class="form-control bg-transparent text-danger" id="number1" placeholder="Número 1"
               step="0.01" required>
             <label for="number1">Ingrese "Número"</label>
           </div>
 
           <div class="form-floating">
-            <select class="form-select bg-dark text-light" id="operator" aria-label="Operador" required>
+            <select class="form-select bg-dark text-danger" id="operator" aria-label="Operador" required>
               <option selected value="+">+</option>
               <option value="-">-</option>
               <option value="*">*</option>
@@ -34,12 +34,12 @@
           </div>
 
           <div class="form-floating">
-            <input type="number" class="form-control bg-transparent text-light" id="number2" placeholder="Número 2"
+            <input type="number" class="form-control bg-transparent text-danger" id="number2" placeholder="Número 2"
               step="0.01" required>
             <label for="number2">Ingrese "Número"</label>
           </div>
           
-          <button class="btn btn-outline-light btn-lg w-100">Calcular</button>
+          <button class="btn btn-outline-danger btn-lg w-100">Calcular</button>
         </form>
         <h2 class="badge text-bg-primary fs-2" id="result"></h2>
       </div>
