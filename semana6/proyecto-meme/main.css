@@ -1,0 +1,351 @@
+.body {
+    font-family: "Roboto", "Sans serif";
+    margin: 0;
+    padding: 0;
+}
+
+.--container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to Right, #8d0303, #ffc16b);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.header-nav--container {
+    display: none;
+}
+
+.header-nav__logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 3.5rem;
+}
+
+.header-nav__logo-anchor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-nav__logo {
+    width: 100%;
+    cursor: pointer;
+}
+
+.header-nav__title {
+    color: #fff;
+    font-family: "Gagalin";
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.header-nav__link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.about:hover {
+    color: #edff7b;
+}
+
+.library {
+    background: #ff5e5e;
+    border-radius: 0.8rem;
+    padding: 0.6rem 1rem;
+}
+
+.library:hover {
+    background: #2a9d8f;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.header-banner__description {
+    text-align: center;
+}
+
+.header-banner__title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.redireccionar {
+    font-weight: 700;
+    color: #03718d;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0.75rem;
+    border-radius: 1.25rem;
+}
+
+.redireccionar:hover {
+    border: 0.2rem solid #fff;
+    color: #fff;
+    background: #f2ff65;
+}
+
+.header-banner__img--container {
+    width: 60rem;
+    margin: 0;
+}
+
+.header-banner__img {
+    width: 100%;
+}
+
+.emoji {
+    background-image: url("https://emojitool.com/img/apple/ios-13.3/face-with-tears-of-joy-1683.png");
+    background-size: cover;
+    border-radius: 50%;
+    /* opacity: .7; */
+    position: absolute;
+    bottom: -120rem;
+    animation: movimiento 3s linear infinite;
+}
+
+.emoji:nth-child(1) {
+    width: 5rem;
+    height: 5rem;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.emoji:nth-child(2) {
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    animation-duration: 3.5s;
+}
+
+.emoji:nth-child(3) {
+    width: 3rem;
+    height: 3rem;
+    left: 70%;
+    animation-duration: 4s;
+}
+
+.emoji:nth-child(4) {
+    width: 5rem;
+    height: 5rem;
+    left: 20%;
+    animation-duration: 4.5s;
+}
+
+.emoji:nth-child(5) {
+    width: 8rem;
+    height: 8rem;
+    left: 80%;
+    animation-duration: 2.5s;
+}
+
+.emoji:nth-child(6) {
+    width: 3rem;
+    height: 3rem;
+    left: 90%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.emoji:nth-child(7) {
+    width: 2rem;
+    height: 2rem;
+    left: 15%;
+    animation-duration: 6s;
+}
+
+.emoji:nth-child(8) {
+    width: 3rem;
+    height: 3rem;
+    left: 10%;
+    animation-duration: 5s;
+}
+
+@keyframes movimiento {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        opacity: 0.9;
+        filter: brightness(110%);
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.main {
+    min-height: 92vh;
+    margin: 0 auto;
+    background-image: url("https://fondosmil.com/fondo/57521.jpg");
+    background-size: cover;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.momazos-title {
+    color: #00f4fc;
+}
+.momazos-buscador {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.meme-container {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0.25rem 0.5rem 0.75rem 0.5rem #03718d;
+    padding: 2rem;
+}
+
+.meme-img-container {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.1rem 0 rgba(47, 144, 255, 0.459);
+}
+
+.meme-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.meme-img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.meme-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: #20d5db;
+    margin: 0;
+}
+
+.meme-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.meme-boton {
+    background-color: #2054ff;
+    padding: 0.75rem;
+    width: 10rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.meme-boton:hover {
+    filter: brightness(150%);
+}
+
+@media (min-width: 800px) {
+    .header-nav--container {
+        display: block;
+    }
+
+    .header-banner {
+        gap: 3rem;
+    }
+
+    .--container {
+        align-items: center;
+    }
+
+    .header-banner__description {
+        text-align: left;
+    }
+
+    .header-banner__title {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    .redireccionar {
+        font-size: 1.5rem;
+        padding: 1.25rem 2rem;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+    }
+    .momazos-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .momazos-buscador {
+        width: 30rem;
+        height: 3.5rem;
+        border: none;
+        border-radius: 1.25rem;
+        padding-left: 1rem;
+    }
+
+    .momazos-buscador::onclick {
+        border: 2p solid #20d5db;
+        font-size: 1rem;
+    }
+
+    .meme-img-container {
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+.deadline {
+    display: flex;
+}
+.deadline-format {
+    background: grey;
+    color: black;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}

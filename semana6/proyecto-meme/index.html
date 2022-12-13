@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
+    <title>Filtro con nuestra lista</title>
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header-nav --container">
+        <figure class="header-nav__logo-container">
+          <a href="./" class="header-nav__logo-anchor">
+            <img src="https://i.postimg.cc/pX8dqSjx/meme-sunglasses-laugh.png" alt="./" href="./" class="header-nav__logo">
+          <h1 class="header-nav__title">Momazos</h1>
+          </a>
+        </figure>
+        <nav class="header-nav--container">
+          <a class="header-nav__link about" href="#">Sobre Momazos</a>
+          <a class="header-nav__link library" href="#">Biblioteca</a>
+        </nav>
+      </div>
+      <section class="header-banner --container">
+        <section class="header-banner__description">
+          <h2 class="header-banner__title">
+            El mejor contenido de memes y momazos del año!
+          </h2>
+          <a href="#main-contenido" class="redireccionar"
+            >Ir a explorar memes</a
+          >
+        </section>
+        <figure class="header-banner__img--container">
+          <img
+            class="header-banner__img"
+            src="https://i.postimg.cc/YqLrjF99/png-transparent-rage-comic-internet-meme-trollface-internet-troll-meme-face-white-hand-photography.png"
+            alt="momo clásico"
+          />
+        </figure>
+      </section>
+
+       </header>
+
+    <main class="main" id="main-contenido">
+      <div class="momazos-container">
+        <h1 class="momazos-title">Catálogo de memes</h1>
+        <input class="momazos-buscador" type="text" placeholder='"Ponte las pilas crag"' id="buscador" />
+        <div id="resultado"></div>
+      </div>
+    </main>
+
+
+
+
+    
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
